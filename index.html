@@ -18,11 +18,12 @@
     
     #page{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         font-family: 'Oswald', sans-serif;
         background-image: url("background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        /* border: 3px solid green; */
         
     }
     #nav{
@@ -39,7 +40,6 @@
     #link a {
     padding:1vw;
     margin: 0;
-
     text-decoration: none;
     font-size:2vw;
     color:rgb(37, 37, 37);
@@ -53,8 +53,7 @@
         color: rgb(255, 255, 255);
         background-color: rgb(36, 36, 36);
         transition-duration: 400ms;
-        box-shadow: 0px 0px 2px 0px rgb(214, 213, 213);
-        font-size: 30px;
+        /* font-size:2.1vw; */
     }
 
     #logo{
@@ -66,8 +65,8 @@
     }
 
     #logo img{
-    width: 40%;
-    height:auto;
+    width:40%;
+    height: auto;
     /* border: 2px solid white; */
     justify-content: flex-start;
     }
@@ -93,7 +92,6 @@
         margin: 0;
         padding: 0;
         height:33vh;
-
         /* border: 10px solid green; */
         display: flex;
         flex-direction: column;
@@ -105,42 +103,77 @@
       flex-direction: row; 
       height: 100vh;
         width:100vw;
-        background-color: rgba(49, 49, 49, 0.979);
+        background-image: url("background.jpg");
         font-family: 'Oswald', sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
         
   }
     #left{
-        width:50%;
+        width:50vw;
         display: flex;
         flex-direction: column;
-        border-right:3px solid rgb(13, 160, 49);}
+        border-right:.4vw solid rgb(13, 160, 49);
+        }
+        
 
 #image-1_cont{
        height: 35vh;
+       display: flex;
+       justify-content: center;
+       border-bottom:.4vw solid green;
+
    }
   
    #image-1{
-       height: auto;
-       width:60%;
-       margin: 0 auto;
-       padding: 30px;
+       height:auto;
+       width:30vw;
+       /* margin: 0 auto; */
+       /* padding: 30px; */
        /* border: 1px solid green; */
        display:block;
    }
-  
-   #para-2 p {
-       padding: 15px;
-       display:flex;
-       align-items: center;
-       font-size: 25px !important;
-       border-top:4px solid rgb(32, 153, 52);
-       height: 65vh;
-       color: azure;
+   #que_2{
+    /* border:1px solid green;   */
+   font-size:6vw;
+   box-sizing: border-box;
+   position: absolute;
+   margin-top:-8.5vw; 
+   }
+
+   #que_3{
+   /* border:1px solid green;   */
+   font-size:6vw;
+   box-sizing: border-box;
+   padding-left:35vw;
+   height:6vw;
+   position: absolute;
+   margin-top:10vw;
+   margin-left:-1vw;  
+   
+   }
+
+   #que_1{
+       /* border:1px solid green;   */
+       position: relative;
+       font-size: 2vw;
        text-align: justify;
+       padding: 1vw;
+   }
+
+   #para-2{
+       display:flex;
+       flex-direction: column;
+       justify-content:center;
+       font-size: 1.5vw !important;
+       height:65vh;
+       color: rgb(0, 0, 0);
+       /* border: 1px solid red;  */
+       position: relative;
    }
    
    #right{
-    width:50%;
+    width:50vw;
         display: flex;
         
 }
@@ -178,12 +211,12 @@
     flex-direction:column;
 
     justify-content:space-around; 
-    height:72vh; 
+    height:67vh; 
     align-items: center;
     /* border: 1px solid black; */
     
     margin-top:8vh; 
-    margin-bottom:2vh;
+    margin-bottom:7vh;
 
 }
 #items h2{
@@ -345,13 +378,14 @@ color:  #55acee;
          <div id="left">
           <div id="image-1_cont"><img src="logo-2.gif" id="image-1" alt="" ></div>
           <div id="para-2">
-                <p><q>SHOTEJ (Fresh) Tag is an inexpensive freshness indicator for
-                perishable produces developed for the marginal supply chain
-                stakeholders of Bangladesh which will reduce premature food wastage 
-                by indicating when the food is actually going to expire.
-                It will do so by recording the surrounding 
-                varying temperature at a regular interval through a temperature sensor </q></p> 
-           
+                <p id="que_2">"</p>
+<p id="que_1">SHOTEJ (Fresh) Tag is an inexpensive freshness indicator for
+perishable produces developed for the marginal supply chain
+stakeholders of Bangladesh which will reduce premature food wastage 
+by indicating when the food is actually going to expire.
+It will do so by recording the surrounding 
+varying temperature at a regular interval through a temperature sensor </p> 
+                <p id="que_3">"</p> 
           </div>
          </div>
          <div id="right">
